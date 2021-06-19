@@ -61,6 +61,16 @@ header {
       text-align: center;
       text-transform: capitalize;
       padding-bottom: 60px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: 27px;
+        width: 50px;
+        height: 1px;
+        background-color: $turqoise;
+      }
     }
     p {
       font-family: $font-roboto;
@@ -126,6 +136,16 @@ main {
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 62px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: -18px;
+        width: 50px;
+        height: 2px;
+        background-color: $line;
+      }
     }
     .logtext {
       // @include make-col(2, 116px);
@@ -206,6 +226,16 @@ main {
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 68px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: -18px;
+        width: 50px;
+        height: 2px;
+        background-color: $line;
+      }
     }
     article {
       @include make-col(3, 0px);
@@ -269,6 +299,16 @@ main {
       color: $white;
       text-align: center;
       margin-bottom: 67px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: -18px;
+        width: 50px;
+        height: 2px;
+        background-color: $teal;
+      }
     }
     article {
       @include make-col(4, 20px);
@@ -337,6 +377,16 @@ main {
       text-align: center;
       text-transform: uppercase;
       margin-bottom: 70px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: -18px;
+        width: 50px;
+        height: 2px;
+        background-color: $line;
+      }
     }
     article {
       @include make-col(6, 0px);
@@ -499,7 +549,48 @@ main {
 }
 
 @media screen and (max-width: 470px) {
+  header {
+    nav {
+      flex-direction: row;
+      .menu {
+        margin-left: auto;
+        li {
+          margin-right: 8px;
+          &#bigmenu {
+            display: none;
+          }
+          &#mobilemenu {
+            display: block;
+          }
+        }
+      }
+    }
+  }
   main {
+    #expertise {
+      article {
+        @include make-col(1, 0px);
+        > div {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5) {
+            border-bottom: solid $turqoise 1px;
+          }
+        }
+        > div {
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(5),
+          &:nth-child(6) {
+            border-right: none;
+          }
+        }
+      }
+    }
     #work {
       article {
         @include make-col(2, 0px);
