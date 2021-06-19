@@ -79,6 +79,7 @@ header {
       height: 40px;
       width: 120px;
       border-radius: 2px;
+      border-style: solid;
     }
     .navbul {
       display: flex;
@@ -98,5 +99,73 @@ header {
         }
       }
     }
+  }
+}
+
+main {
+  height: 2000px;
+  #story {
+    margin: 70px 0px;
+    h1 {
+      font-family: $font-playfair;
+      font-weight: 700;
+      font-size: 2.2rem;
+      color: $title;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-family: $font-playfair;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: $textsub;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 62px;
+    }
+    .logtext {
+      // @include make-col(2, 116px);
+      display: flex;
+      img {
+        margin: 0px 116px;
+        height: 230px;
+        width: 235px;
+        margin-bottom: 29px;
+      }
+      p {
+        margin-right: 10px;
+      }
+    }
+    p {
+      font-family: $font-roboto;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      color: $textsub;
+      text-align: center;
+    }
+    button {
+      // margin: 46px 0px 46px 0px;
+      margin-left: calc(50% - 60px);
+      font-family: $font-roboto;
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: $turqoise;
+      background: none;
+      border-color: $turqoise;
+      height: 40px;
+      width: 120px;
+      border-radius: 2px;
+      border-style: solid;
+    }
+  }
+  #clip {
+  }
+  #expertise {
+  }
+  #team {
+  }
+  #work {
   }
 }
