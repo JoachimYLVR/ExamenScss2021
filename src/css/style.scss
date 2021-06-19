@@ -103,7 +103,6 @@ header {
 }
 
 main {
-  height: 2000px;
   #story {
     margin: 70px 0px;
     h1 {
@@ -161,6 +160,27 @@ main {
     }
   }
   #clip {
+    background-image: url("../images/skyline.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    div {
+      font-size: 100px;
+      width: 100px;
+      color: $white;
+      margin-left: calc(50% - 50px);
+      margin-top: 200px;
+      margin-bottom: 34px;
+    }
+    p {
+      font-family: $font-roboto;
+      font-weight: 900;
+      color: $white;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 200px;
+    }
   }
   #expertise {
   }
