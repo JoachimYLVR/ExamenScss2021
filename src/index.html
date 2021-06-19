@@ -9,14 +9,30 @@
   </head>
   <body>
     <include src="./symbol-defs.svg"></include>
-    <include src="./header.html"></include>
-    <h1>
-      Home<svg class="icon icon-shrink2">
-        <use href="#icon-shrink2" />
-      </svg>
-    </h1>
-    <div class="test"></div>
-    <include src="./footer.html"></include>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="" class="logo"><img src="./images/logo.png"></img></a>
+          <ul class="menu">
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">expertise</a></li>
+            <li><a href="#">teams/a></li>
+            <li><a href="#">works</a></li>
+            <li><a href="#">people say</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+        </nav>
+        <div>yyy</div>
+      </div>
+    </header>
+    <main>
+      <div class="container" id="story"></div>
+      <div class="container" id="clip"></div>
+      <div class="container" id="expertise"></div>
+      <div class="container" id="team"></div>
+      <div class="container" id="work"></div>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>

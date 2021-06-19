@@ -8,12 +8,42 @@ html {
   font-size: 62.5%;
 }
 
-$oranje: orange;
-body {
-  margin: 10px;
+.container {
+  width: 58.75%;
+  max-width: 1400px;
+  margin: auto;
 }
-h1 {
-  color: $oranje;
-  font-size: 30px;
-  margin: 50px 0;
+
+header {
+  background-image: url("../images/trees1.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  nav {
+    background-color: red;
+    height: 81px;
+    display: flex;
+    .logo {
+      align-self: center;
+    }
+    .menu {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      li {
+        margin-right: 24px;
+        a {
+          color: $white;
+          font-family: $font-roboto;
+          font-size: 13px;
+          font-weight: 400;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
 }
